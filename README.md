@@ -59,3 +59,79 @@ Escolha uma opção: 2 (Listar doces)
 O armazenamento dos dados é temporário (em memória) e os doces cadastrados serão perdidos ao sair do programa.
 
 A validação de entrada de dados, como garantir que o preço seja um número válido, não está implementada (o uso de float(input(...)) pode causar um erro se o usuário digitar um texto).
+
+🧩 Exemplo de Solução de Problema
+
+Imagine que uma pequena loja de doces quer ter controle básico dos produtos que vende.
+Atualmente, a loja anota os doces em um papel, o que causa problemas como:
+
+esquecer preços
+
+perder anotações
+
+dificuldade para procurar um doce específico
+
+falta de organização
+
+📍 Problema real:
+
+“Precisamos de uma forma simples de cadastrar doces com nome e preço e conseguir encontrá-los rapidamente.”
+
+✔ Como o código resolve isso:
+
+Cadastro organizado
+
+O usuário informa o nome e o preço do doce.
+
+O sistema armazena tudo em um dicionário dentro de uma lista, evitando bagunça.
+
+Listagem rápida
+
+A função listar_doces() mostra todos os doces cadastrados com numeração.
+
+Isso ajuda o dono da loja a ver tudo que está disponível.
+
+Busca eficiente
+
+A função buscar_doce() permite digitar o nome do doce.
+
+O sistema retorna imediatamente o preço daquele doce.
+
+Não importa se o usuário digitar com letras maiúsculas ou minúsculas.
+
+Menu simples para uso diário
+
+O menu feito com while e if/elif deixa o sistema fácil de usar, mesmo por quem não entende de informática.
+
+🧪 Exemplo prático usando o sistema:
+
+Suponha que o usuário faça isso no menu:
+
+Escolhe a opção 1 - Cadastrar doce
+
+Nome: Brigadeiro
+
+Preço: 2.50
+
+Cadastra outro doce:
+
+Nome: Beijinho
+
+Preço: 2.00
+
+Usa a opção 2 - Listar doces
+Resultado exibido:
+
+1. Brigadeiro - R$ 2.50
+2. Beijinho - R$ 2.00
+
+
+Usa a opção 3 - Buscar doce
+Digita: Brigadeiro
+Resultado:
+
+Encontrado: Brigadeiro - R$ 2.50
+
+🏁 Conclusão
+
+Esse mini-sistema resolve o problema de forma rápida e organizada, permitindo que até uma loja pequena consiga controlar seus doces sem complicação — utilizando apenas listas, dicionários, repetição e condicionais.
